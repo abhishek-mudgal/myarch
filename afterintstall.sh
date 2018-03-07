@@ -25,7 +25,7 @@ useradd -mg users -G wheel,storage,power -s /bin/bash abhishek
 passwd abhishek
 chage -d 0 abhishek
 
-pacman -S sudo curl ppp netctl dialog wpa_supplicant networkmanager grub efibootmgr dosfstools os-prober mtools yaourt xorg-server xorg-xinit xf86-video-intel lightdm  deepin deepin-extra bluez bluez-utils network-manager-applet firefox-developer-edition
+pacman -S sudo curl ppp netctl dialog wpa_supplicant networkmanager grub efibootmgr dosfstools os-prober vim nano curl wget htop gparted mtools yaourt xorg-server xorg-xinit xf86-video-intel lightdm  deepin deepin-extra bluez bluez-utils network-manager-applet firefox-developer-edition
 mkdir /boot/EFI
 mount /dev/sda1 /boot/EFI
 grub-install --target=x86_64-efi  --bootloader-id=grub_uefi --recheck
