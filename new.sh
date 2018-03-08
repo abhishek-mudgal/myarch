@@ -2,6 +2,7 @@
 
 
 wget https://raw.githubusercontent.com/abhishek9650/myarch/master/mirrorlist
+wget https://raw.githubusercontent.com/abhishek9650/myarch/master/afterinstall.sh
 cp mirrorlist /etc/pacman.d/mirrorlist
 
 mkfs.fat -F32 /dev/sda1
