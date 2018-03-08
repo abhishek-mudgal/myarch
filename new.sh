@@ -1,8 +1,8 @@
 #!/bin/bash
 
-cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
-sed -i 's/^#Server/Server/' /etc/pacman.d/mirrorlist.backup
-rankmirrors -n 50 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist
+
+wget https://raw.githubusercontent.com/abhishek9650/myarch/master/mirrorlist
+cp mirrorlist /etc/pacman.d/mirrorlist
 
 mkfs.fat -F32 /dev/sda1
 mkfs.ext4 /dev/sda3
