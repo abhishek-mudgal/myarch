@@ -1,6 +1,10 @@
 echo "OPTIMUS" > /etc/hostname
 echo "en_IN UTF-8" >> /etc/locale.gen
 
+cd /home/abhishek/
+rm -rf .android .bash_history .bash_logout .bash_profile .bashrc .cache .config .designer .dmrc .esd_auth .Genymobile .gitconfig .bash_profile .gtkrc-2.0 .icons .imwheelrc .local .mozilla .nv .pki .repoconfig .repo_.gitconfig.json .stremio-server .ssh .themes .vim .viminfo .Xauthority .xsession-errors .xsession-errors.old
+cd -
+
 locale-gen
 echo LANG=en_IN.UTF-8 > /etc/locale.conf
 export LANG=en_IN.UTF-8
