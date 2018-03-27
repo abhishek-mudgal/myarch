@@ -1,7 +1,11 @@
 #!/bin/bash
 
 
-wget https://raw.githubusercontent.com/abhishek9650/myarch/master/mirrorlist
+cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
+sed -i 's/^#Server/Server/' /etc/pacman.d/mirrorlist.backup
+rankmirrors -n 50 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist
+
+
 wget https://raw.githubusercontent.com/abhishek9650/myarch/master/afterinstall.sh
 cp mirrorlist /etc/pacman.d/mirrorlist
 
