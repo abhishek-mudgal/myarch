@@ -1,6 +1,9 @@
 echo "OPTIMUS" > /etc/hostname
 echo "en_IN UTF-8" >> /etc/locale.gen
 
+cd /home/abhishek/
+rm -rf .bash_history .bashrc .cache .config .dbus .dmrc .esd_auth .ICEauthority .local .mozilla .nv .nvidia-settings-rc .pki .vscode .Xauthority .xsession-errors .xsession-errors.old
+cd -
 
 locale-gen
 echo LANG=en_IN.UTF-8 > /etc/locale.conf
