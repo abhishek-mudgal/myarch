@@ -22,7 +22,7 @@ useradd -mg users -G wheel,storage,power -s /bin/bash abhishek
 passwd abhishek
 chage -d 0 abhishek
 
-pacman -S sudo curl ppp netctl dialog wpa_supplicant networkmanager grub efibootmgr dosfstools os-prober vim nano curl wget vlc pulseaudio cheese pulseaudio-alsa pulseaudio-bluetooth pulseaudio-equalizer pulseaudio-jack htop gparted mtools xorg-server xorg-xinit lightdm gedit deepin deepin-extra bluez bluez-utils firefox-developer-edition bumblebee mesa xf86-video-intel nvidia lib32-nvidia-utils bbswitch nvidia-utils nvidia-settings cuda
+pacman -S sudo curl ppp netctl dialog wpa_supplicant networkmanager grub efibootmgr dosfstools os-prober vim nano curl wget vlc pulseaudio cheese pulseaudio-alsa pulseaudio-bluetooth pulseaudio-equalizer pulseaudio-jack htop gparted mtools xorg-server xorg-xinit lightdm gedit xfce4 xfce4-goodies bluez bluez-utils firefox-developer-edition bumblebee mesa xf86-video-intel nvidia lib32-nvidia-utils bbswitch nvidia-utils nvidia-settings cuda
 mkdir /boot/EFI
 mount /dev/sda1 /boot/EFI
 grub-install --target=x86_64-efi  --bootloader-id=grub_uefi --recheck
