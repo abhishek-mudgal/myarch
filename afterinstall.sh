@@ -36,9 +36,4 @@ systemctl enable NetworkManager
 systemctl enable bluetooth
 systemctl enable bumblebeed.service
 
-echo "" >> /etc/pacman.conf
-echo "[archlinuxfr]
-SigLevel = Never
-Server = http://repo.archlinux.fr/$arch" >> /etc/pacman.conf
-
 visudo
