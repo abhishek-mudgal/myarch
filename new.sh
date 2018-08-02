@@ -6,7 +6,6 @@ wget https://raw.githubusercontent.com/abhishek9650/myarch/master/afterinstall.s
 
 mkfs.fat -F32 /dev/sda1
 mkfs.ext4 /dev/sda3
-mkfs.ext4 /dev/sda4
 mkfs.ext4 /dev/sda5
 
 mkswap /dev/sda2
@@ -14,6 +13,7 @@ mkswap /dev/sda2
 mount /dev/sda3 /mnt
 mkdir /mnt/home
 mount /dev/sda4 /mnt/home
+rm -rf /mnt/home/abhishek/.*
 swapon /dev/sda2
 
 echo "" >> /etc/pacman.conf
