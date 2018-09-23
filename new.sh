@@ -6,7 +6,6 @@ wget https://raw.githubusercontent.com/abhishek9650/myarch/master/afterinstall.s
 
 mkfs.fat -F32 /dev/sda1
 mkfs.ext4 /dev/sda3
-mkfs.ext4 /dev/sda5
 
 mkswap /dev/sda2
 
