@@ -21,7 +21,14 @@ passwd
 useradd -mg users -G wheel,storage,power -s /bin/bash abhishek
 passwd abhishek
 
-pacman -S sudo curl ppp netctl dialog wpa_supplicant networkmanager grub efibootmgr dosfstools os-prober vim nano curl wget vlc pulseaudio cheese pulseaudio-alsa pulseaudio-bluetooth pulseaudio-equalizer pulseaudio-jack htop gparted mtools xorg lightdm gedit gnome bluez bluez-utils firefox bumblebee mesa xf86-video-intel nvidia lib32-nvidia-utils bbswitch nvidia-utils nvidia-settings cuda ttf-ubuntu-font-family ubuntu-keyring
+pacman -S sudo curl ppp netctl dialog wpa_supplicant networkmanager  \
+          grub efibootmgr dosfstools os-prober    \
+          vim nano curl wget vlc pulseaudio cheese hexchat telegram-desktop   \
+          pulseaudio-alsa pulseaudio-bluetooth pulseaudio-equalizer pulseaudio-jack    \
+          htop gparted mtools xorg lightdm gedit bluez bluez-utils firefox   \
+          bumblebee mesa xf86-video-intel nvidia lib32-nvidia-utils bbswitch nvidia-utils nvidia-settings cuda   \
+          ttf-ubuntu-font-family ubuntu-keyring    \
+          deepin deepin-extra gtk-engine-murrine gtk-engines qtcreator
 mkdir /boot/EFI
 mount /dev/sda1 /boot/EFI
 grub-install --target=x86_64-efi  --bootloader-id=grub_uefi --recheck
