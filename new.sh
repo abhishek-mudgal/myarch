@@ -14,6 +14,7 @@ mkdir /mnt/home
 mount /dev/sda4 /mnt/home
 rm -rf /mnt/home/abhishek/.*
 swapon /dev/sda2
+mount /dev/sda5 /mnt/home/abhishek/workspace
 
 echo "" >> /etc/pacman.conf
 echo "" >> /etc/pacman.conf
